@@ -1,0 +1,5 @@
+num = int(input("Enter a number: "))
+digits = list(map(int, str(num)))
+power = len(digits)
+armstrong = sum(d**power for d in digits)
+print("Armstrong Number" if armstrong == num else "Not an Armstrong Number")
